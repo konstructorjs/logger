@@ -1,0 +1,45 @@
+{
+  "name": "@konstructor/logger",
+  "version": "0.0.0",
+  "description": "logger wrapper for konstructor",
+  "main": "lib",
+  "scripts": {
+    "dev": "babel --out-dir lib/ --copy-files --watch src/",
+    "prepublish": "npm run compile",
+    "compile": "babel --out-dir lib/ --copy-files src/",
+    "test": "npm run lint",
+    "lint": "eslint *.js src/*"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konstructorjs/logger.git"
+  },
+  "keywords": [
+    "konstructor",
+    "koa",
+    "node"
+  ],
+  "author": "Manthan Mallikarjun",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/konstructorjs/logger/issues"
+  },
+  "homepage": "https://github.com/konstructorjs/logger#readme",
+  "dependencies": {
+    "koa-logger": "^3.1.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  }
+}
